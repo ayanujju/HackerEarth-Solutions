@@ -1,6 +1,6 @@
 # HackerEarth-Solutions
 
-## This repository consists of the solutions of HackerEarth problems (Will updating regularly)
+## This repository consists of the solutions of HackerEarth problems (I Will be updating it regularly)
 
 **About HackerEarth**
 
