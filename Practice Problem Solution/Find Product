@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,i;
+    long long int answer=1;
+    scanf("%d",&n);
+    int a[n];
+    if(n>=1&&n<=1000){
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d ",&a[i]);
+        if(a[i]>=1&&a[i]<=1000){
+            answer = ((answer*a[i])%(1000000000+7));
+    }
+    }
+        printf("%ld",answer);
+    }
+    return 0;
+    
+}
