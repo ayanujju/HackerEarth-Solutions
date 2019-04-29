@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+    int p,s,t,h,x;
+    scanf("%d %d %d %d %d",&p,&s,&t,&h,&x);
+    if((p&&h)>=1&&(p&&h)<=100000&&(s>=1&&s<=300)&&(t>=1&&t<=s)&&(x>=1&&x<=s))
+    {
+        if((x-(s-t))>0)
+           printf("%d",(s-t)*p+(x-(s-t))*h);
+        else
+            printf("%d",x*p);
+    }
+}
