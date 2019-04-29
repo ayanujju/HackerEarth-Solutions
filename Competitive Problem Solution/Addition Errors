@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+long long xSum(long long n, long long m) 
+{ 
+    long long res = 0; 
+    long long multiplier = 1; 
+    long long bit_sum; 
+    while (n || m) { 
+        bit_sum = (n % 10) + (m % 10); 
+        bit_sum %= 10; 
+        res = (bit_sum * multiplier) + res; 
+        n /= 10; 
+        m /= 10; 
+        multiplier *= 10; 
+    } 
+    return res; 
+} 
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--){
+        long long a,b,i,j,sum=0;
+        cin >> a >> b;
+        i= xSum( a, b);
+        j= a+b;
+        if((j-i)>0)
+            cout << j-i << endl;
+        else
+            cout << i-j << endl;
+        }
+}
