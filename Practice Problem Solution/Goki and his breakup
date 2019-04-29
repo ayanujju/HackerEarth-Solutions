@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int i;
+    long long  x,n;
+    scanf("%ld %d",&n,&x);
+    long long y[n];
+    for(i=0;i<n;i++){
+        scanf("%ld ",&y[i]);
+        if(y[i]>=x)
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+}
